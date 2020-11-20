@@ -1,0 +1,113 @@
+\documentclass{ximera}  
+\title{The First Activity}  
+\begin{document}  
+\begin{abstract}  
+This activity deals with Ximera activities.  
+\end{abstract}  
+\maketitle
+\begin{abstract}
+We study the integration technique of integration by parts.
+\end{abstract}
+\maketitle
+
+\section*{(Video) Calculus: Single Variable}
+
+\youtube{xWm3b8GWHrg}
+
+\section*{Online Texts}
+\begin{itemize}
+\item \link[OpenStax II 3.1: Integration by Parts]{https://openstax.org/books/calculus-volume-2/pages/3-1-integration-by-parts}
+\item \link[Ximera OSU: Integration by Parts]{https://ximera.osu.edu/mooculus/calculus2/integrationByParts/titlePage}
+\item \link[Community Calculus 8.4: Integration by Parts]{https://www.whitman.edu/mathematics/calculus_online/section08.04.html}
+\end{itemize}
+
+\section*{Examples}
+
+
+\begin{example}
+Compute the indefinite integral
+\[ \int x e^{3x} dx. \]
+\begin{itemize}
+\item Because integrating $e^{3x}$ and differentiating $e^{3x}$ are at a similar level of difficulty, we opt to differentiate $x$ so that its degree as a polynomial will be decreasing.
+\item This gives
+\[ \int x e^{3x} dx = \answer{\frac{1}{3} x e^{3x}} - \int \answer{ \frac{1}{3} e^{3x} } dx = \answer{ \frac{1}{3} x e^{3x} - \frac{1}{9} e^{3x} } + C. \]
+\end{itemize}
+\end{example}
+
+
+\begin{example}
+Compute the indefinite integral
+\[ \int x^2 \ln |x| dx. \]
+\begin{itemize}
+\item Because integrating $\ln |x|$ is much harder than differentiating it, we choose to differentiate $\ln |x|$ and integrate $x^2$. 
+\item This gives
+\[ \int x^2 \ln |x| dx = \answer{\frac{x^3}{3}} \ln |x| - \int \answer{\frac{x^2}{3}} dx = \answer{ \frac{x^3}{3} \ln |x| - \frac{x^3}{9}} + C. \]
+\end{itemize}
+\end{example}
+
+
+\begin{example}
+Compute the indefinite integral
+\[ \int x^4 e^{2x} dx. \]
+\begin{itemize}
+\item We'll do this using an organizational technique called ``tabular integration'' that many people find helpful when doing repeated integrations by parts.
+\item Make a table: one column for $u$ and another for $dv$. In the first row, rewrite the functions that you will use for $u$ and $dv$:
+\begin{center}
+\begin{tabular}{ccc}
+ & $u$ & $dv$ \\
+ \hline
+& $\displaystyle x^4$ & $\displaystyle e^{2x}$ 
+\end{tabular}
+\end{center}
+\item Add new rows: differentiate items in the $u$ column and integrate items in the $dv$ column to determine what items go in the next row. 
+\begin{center}
+\begin{tabular}{ccc}
+ & $u$ & $dv$ \\
+ \hline
+& $\displaystyle x^4$ & $\displaystyle e^{2x}$ \\
+& $\displaystyle 4 x^3$ & $\displaystyle e^{2x}/2$ \\
+& $\displaystyle \answer{12 x^2}$ & $\displaystyle \answer{e^{2x}/4}$ \\
+& $\displaystyle \answer{24 x}$ & $\displaystyle \answer{e^{2x}/8}$ \\
+& $\displaystyle \answer{24}$ & $\displaystyle  \answer{e^{2x}/16}$ \\
+\end{tabular}
+\item Now you combine terms by matching items in the first column with items \textit{one row down}. For the last item in the $u$ column, match it with the last item in the $dv$ column (which you'll end up using twice):
+\[ \begin{aligned} x^4 \cdot \frac{e^{2x}}{2}, \qquad {4 x^3} & \cdot \answer{\frac{e^{2x}}{4}}, \qquad \answer{12 x^2} \cdot \answer{\frac{e^{2x}}{8}}, \\  & \answer{24 x}  \cdot \answer{\frac{e^{2x}}{16}}, \qquad \answer{24} \cdot \answer{\frac{e^{2x}}{16}} \end{aligned} \]
+\end{center}
+\item To finish, you alternate addition and subtraction. Give a $+$ to the first term, a $-$ to the second, and so on. Last but not least, put an integral on the last term as well:
+\[ + x^4 \frac{e^{2x}}{2} - \answer{4 x^3 \frac{e^{2x}}{4}} + \answer{12 x^2 \frac{e^{2x}}{8}} - \answer{24 x\frac{e^{2x}}{16} }+ \int \answer{24 \frac{e^{2x}}{16}} dx \]
+In this way, we arrive at the formula
+\[ \int x^4 e^{2x} dx = \frac{1}{2} x^4 e^{2x} - x^3 e^{2x} + \frac{3}{2} x^2 e^{2x} - \frac{3}{2} x e^{2x} + \int \frac{3}{2} e^{2x} dx \]
+\item Sometimes the integrand of the last term is zero. This would happen when $u$ is a polynomial if you have enough lines in your table. In that case there would be nothing else to compute.  (We stopped one line short of that point on purpose in this example to show how you would handle a case where there the last term \textit{isn't} zero.)
+\item In this case, the final answer is
+\[ \int x^4 e^{2x} dx = \frac{1}{2} x^4 e^{2x} - x^3 e^{2x} + \frac{3}{2} x^2 e^{2x} - \frac{3}{2} x e^{2x} + \frac{3}{4} e^{2x} +C \]
+\end{itemize}
+\end{example}
+
+
+\begin{example}
+Compute the indefinite integral below using tabular integration:
+\[ \int \cos 3x \cos 5x ~dx \]
+\begin{itemize}
+\item Let us take $u = \cos 3x$ and $dv = \cos 5x$ (it would have been fine to choose them the other way around as well). The table is then
+\begin{center}
+\begin{tabular}{ccc}
+& $u$ & $dv$ \\
+\hline
+& $\answer{\cos 3x}$ & $\answer{\cos 5x}$ \\
+& $\answer{-3 \sin 3 x}$ & $\answer{(\sin 5x)/5}$ \\
+& $\answer{-9 \cos 3x}$ & $\answer{-(\cos 5x)/25}$
+\end{tabular}
+\end{center}
+Which gives
+\[ \begin{aligned} \int & \cos 3x \cos 5x ~dx = \\ & \answer{ \frac{1}{5} \cos 3x \sin 5x} - \answer{\frac{3}{25} \sin 3x \cos 5x} + \int \answer{\frac{9}{25} \cos 3x \cos 5x} ~dx. \end{aligned} \]
+\item This example has a twist: the integral on the right-hand side is just a constant times the integral on the left-hand side. This indicates that further integrations by parts would be unfruitful because you'd end up in something like a cycle.  What you \textit{can} do is \textit{solve} for the answer by moving both integrals to the left side of the equation and then combining like terms:
+\[ \answer{\frac{16}{25}} \int  \cos 3x \cos 5x ~dx =  \answer{ \frac{1}{5} \cos 3x \sin 5x} - \answer{\frac{3}{25} \sin 3x \cos 5x} \]
+and therefore
+\[ \int \cos 3x \cos 5x ~ dx = \answer{  \frac{5}{16} \cos 3x \sin 5x - \frac{3}{16} \sin 3x \cos 5x} + C. \]
+\end{itemize}
+\end{example}
+
+
+
+
+\end{document}
