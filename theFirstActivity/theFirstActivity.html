@@ -1,0 +1,129 @@
+<!DOCTYPE html><html lang="en"><head> <title>The First Activity</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"/> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"/> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="theFirstActivity.tex"/> 
+<meta name="author" content=""/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="ximera" content="version 0.0.1"/> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async="" src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="dependency" content="271b40497d40a55f15cbdad6bf24cc8cbabe3193 theFirstActivity/theFirstActivity.tex"/></head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\ungraded }[0]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }</script><script type="text/javascript"> 
+</script> 
+</div>
+<div class="abstract">
+<!--l. 5--><p class="noindent">This activity deals with Ximera activities.
+</p></div>   <div class="maketitle"></div><div class="abstract">
+<!--l. 9--><p class="noindent">We study the integration technique of integration by parts.
+</p></div>
+<a id="Q1-1-1"></a>
+<h3 class="likesectionHead"><a id="x1-1000"></a>(Video) Calculus: Single Variable</h3>
+<div class="video youtube-player" data-youtube="xWm3b8GWHrg">_</div>
+<a id="Q1-1-3"></a>
+<h3 class="likesectionHead"><a id="x1-2000"></a>Online Texts</h3>
+     <ul class="itemize1">
+     <li class="itemize"><a href="https://openstax.org/books/calculus-volume-2/pages/3-1-integration-by-parts">OpenStax II 3.1: Integration by Parts</a>
+     </li>
+     <li class="itemize"><a href="https://ximera.osu.edu/mooculus/calculus2/integrationByParts/titlePage">Ximera OSU: Integration by Parts</a>
+     </li>
+     <li class="itemize"><a href="https://www.whitman.edu/mathematics/calculus_online/section08.04.html">Community Calculus 8.4: Integration by Parts</a></li></ul>
+<a id="Q1-1-5"></a>
+<h3 class="likesectionHead"><a id="x1-3000"></a>Examples</h3>
+<div class="theorem-like problem-environment example" id="problem1"><a id="x1-3001r1"></a>Compute the indefinite integral <script type="math/tex; mode=display"> \int x e^{3x} dx. </script>
+     <ul class="itemize1">
+     <li class="itemize">Because integrating <script type="math/tex">e^{3x}</script> and differentiating <script type="math/tex">e^{3x}</script> are at a similar level of difficulty,
+     we opt to differentiate <script type="math/tex">x</script> so that its degree as a polynomial will be decreasing.
+     </li>
+     <li class="itemize">This gives <script type="math/tex; mode=display"> \int x e^{3x} dx = \answer {\frac {1}{3} x e^{3x}} - \int \answer { \frac {1}{3} e^{3x} } dx = \answer { \frac {1}{3} x e^{3x} - \frac {1}{9} e^{3x} } + C. </script></li></ul>
+<!--l. 35--></div>
+
+<div class="theorem-like problem-environment example" id="problem2"><a id="x1-3002r2"></a>Compute the indefinite integral <script type="math/tex; mode=display"> \int x^2 \ln |x| dx. </script>
+     <ul class="itemize1">
+     <li class="itemize">Because integrating <script type="math/tex">\ln |x|</script> is much harder than differentiating it, we choose to
+     differentiate <script type="math/tex">\ln |x|</script> and integrate <script type="math/tex">x^2</script>.
+                                                                  
+
+                                                                  
+     </li>
+     <li class="itemize">This gives <script type="math/tex; mode=display"> \int x^2 \ln |x| dx = \answer {\frac {x^3}{3}} \ln |x| - \int \answer {\frac {x^2}{3}} dx = \answer { \frac {x^3}{3} \ln |x| - \frac {x^3}{9}} + C. </script></li></ul>
+<!--l. 46--></div>
+
+<div class="theorem-like problem-environment example" id="problem3"><a id="x1-3003r3"></a>Compute the indefinite integral <script type="math/tex; mode=display"> \int x^4 e^{2x} dx. </script>
+     <ul class="itemize1">
+     <li class="itemize">We’ll do this using an organizational technique called “tabular integration”
+     that many people find helpful when doing repeated integrations by parts.
+     </li>
+     <li class="itemize">Make a table: one column for <script type="math/tex">u</script> and another for <script type="math/tex">dv</script>. In the first row, rewrite the
+     functions that you will use for <script type="math/tex">u</script> and <script type="math/tex">dv</script>:
+     <div class="center">
+<!--l. 55--><p class="noindent">
+</p>
+<div class="tabular"> <table id="TBL-1" class="tabular" cellspacing="0" cellpadding="0"><colgroup id="TBL-1-1g"><col id="TBL-1-1"/><col id="TBL-1-2"/><col id="TBL-1-3"/></colgroup><tbody><tr style="vertical-align:baseline;" id="TBL-1-1-"><td style="white-space:nowrap; text-align:center;" id="TBL-1-1-1" class="td11">  </td><td style="white-space:nowrap; text-align:center;" id="TBL-1-1-2" class="td11"> <script type="math/tex">u</script> </td><td style="white-space:nowrap; text-align:center;" id="TBL-1-1-3" class="td11"> <script type="math/tex">dv</script> </td></tr><tr class="hline"><td><hr/></td><td><hr/></td><td><hr/></td></tr><tr style="vertical-align:baseline;" id="TBL-1-2-"><td style="white-space:nowrap; text-align:center;" id="TBL-1-2-1" class="td11"> </td><td style="white-space:nowrap; text-align:center;" id="TBL-1-2-2" class="td11">  <script type="math/tex">\displaystyle x^4</script> </td><td style="white-space:nowrap; text-align:center;" id="TBL-1-2-3" class="td11">  <script type="math/tex">\displaystyle e^{2x}</script></td>
+</tr></tbody></table>
+</div></div>
+     </li>
+     <li class="itemize">Add new rows: differentiate items in the <script type="math/tex">u</script> column and integrate items in the <script type="math/tex">dv</script>
+     column to determine what items go in the next row.
+     <div class="center">
+<!--l. 63--><p class="noindent">
+</p>
+<div class="tabular"> <table id="TBL-2" class="tabular" cellspacing="0" cellpadding="0"><colgroup id="TBL-2-1g"><col id="TBL-2-1"/><col id="TBL-2-2"/><col id="TBL-2-3"/></colgroup><tbody><tr style="vertical-align:baseline;" id="TBL-2-1-"><td style="white-space:nowrap; text-align:center;" id="TBL-2-1-1" class="td11">  </td><td style="white-space:nowrap; text-align:center;" id="TBL-2-1-2" class="td11"> <script type="math/tex">u</script> </td><td style="white-space:nowrap; text-align:center;" id="TBL-2-1-3" class="td11"> <script type="math/tex">dv</script> </td></tr><tr class="hline"><td><hr/></td><td><hr/></td><td><hr/></td></tr><tr style="vertical-align:baseline;" id="TBL-2-2-"><td style="white-space:nowrap; text-align:center;" id="TBL-2-2-1" class="td11"> </td><td style="white-space:nowrap; text-align:center;" id="TBL-2-2-2" class="td11">  <script type="math/tex">\displaystyle x^4</script> </td><td style="white-space:nowrap; text-align:center;" id="TBL-2-2-3" class="td11">  <script type="math/tex">\displaystyle e^{2x}</script></td>
+</tr><tr style="vertical-align:baseline;" id="TBL-2-3-"><td style="white-space:nowrap; text-align:center;" id="TBL-2-3-1" class="td11">   </td><td style="white-space:nowrap; text-align:center;" id="TBL-2-3-2" class="td11"> <script type="math/tex">\displaystyle 4 x^3</script> </td><td style="white-space:nowrap; text-align:center;" id="TBL-2-3-3" class="td11"> <script type="math/tex">\displaystyle e^{2x}/2</script> </td></tr><tr style="vertical-align:baseline;" id="TBL-2-4-"><td style="white-space:nowrap; text-align:center;" id="TBL-2-4-1" class="td11"> </td><td style="white-space:nowrap; text-align:center;" id="TBL-2-4-2" class="td11">  <script type="math/tex">\displaystyle \answer {12 x^2}</script> </td><td style="white-space:nowrap; text-align:center;" id="TBL-2-4-3" class="td11">  <script type="math/tex">\displaystyle \answer {e^{2x}/4}</script></td>
+</tr><tr style="vertical-align:baseline;" id="TBL-2-5-"><td style="white-space:nowrap; text-align:center;" id="TBL-2-5-1" class="td11">   </td><td style="white-space:nowrap; text-align:center;" id="TBL-2-5-2" class="td11"> <script type="math/tex">\displaystyle \answer {24 x}</script> </td><td style="white-space:nowrap; text-align:center;" id="TBL-2-5-3" class="td11"> <script type="math/tex">\displaystyle \answer {e^{2x}/8}</script> </td>
+</tr><tr style="vertical-align:baseline;" id="TBL-2-6-"><td style="white-space:nowrap; text-align:center;" id="TBL-2-6-1" class="td11">   </td><td style="white-space:nowrap; text-align:center;" id="TBL-2-6-2" class="td11"> <script type="math/tex">\displaystyle \answer {24}</script> </td><td style="white-space:nowrap; text-align:center;" id="TBL-2-6-3" class="td11"> <script type="math/tex">\displaystyle \answer {e^{2x}/16}</script> </td>
+</tr><tr style="vertical-align:baseline;" id="TBL-2-7-"><td style="white-space:nowrap; text-align:center;" id="TBL-2-7-1" class="td11">   </td>
+</tr></tbody></table></div>
+Now you combine terms by matching items in the first column with items <em>one row
+down</em>. For the last item in the <script type="math/tex">u</script> column, match it with the last item in the <script type="math/tex">dv</script> column
+(which you’ll end up using twice): <script type="math/tex; mode=display"> \begin {aligned} x^4 \cdot \frac {e^{2x}}{2}, \qquad {4 x^3} & \cdot \answer {\frac {e^{2x}}{4}}, \qquad \answer {12 x^2} \cdot \answer {\frac {e^{2x}}{8}}, \\ & \answer {24 x} \cdot \answer {\frac {e^{2x}}{16}}, \qquad \answer {24} \cdot \answer {\frac {e^{2x}}{16}} \end {aligned} </script></div>
+     </li>
+     <li class="itemize">To finish, you alternate addition and subtraction. Give a <script type="math/tex">+</script> to the first term, a <script type="math/tex">-</script> to
+     the second, and so on. Last but not least, put an integral on the last term as
+     well: <script type="math/tex; mode=display"> + x^4 \frac {e^{2x}}{2} - \answer {4 x^3 \frac {e^{2x}}{4}} + \answer {12 x^2 \frac {e^{2x}}{8}} - \answer {24 x\frac {e^{2x}}{16} }+ \int \answer {24 \frac {e^{2x}}{16}} dx </script> In this way, we arrive at the formula <script type="math/tex; mode=display"> \int x^4 e^{2x} dx = \frac {1}{2} x^4 e^{2x} - x^3 e^{2x} + \frac {3}{2} x^2 e^{2x} - \frac {3}{2} x e^{2x} + \int \frac {3}{2} e^{2x} dx </script>
+     </li>
+     <li class="itemize">Sometimes the integrand of the last term is zero. This would happen when <script type="math/tex">u</script> is a
+                                                                  
+
+                                                                  
+     polynomial if you have enough lines in your table. In that case there would be
+     nothing else to compute. (We stopped one line short of that point on purpose in
+     this example to show how you would handle a case where there the last term
+     <em>isn’t</em> zero.)
+     </li>
+     <li class="itemize">In this case, the final answer is <script type="math/tex; mode=display"> \int x^4 e^{2x} dx = \frac {1}{2} x^4 e^{2x} - x^3 e^{2x} + \frac {3}{2} x^2 e^{2x} - \frac {3}{2} x e^{2x} + \frac {3}{4} e^{2x} +C </script></li></ul>
+<!--l. 84--></div>
+
+<div class="theorem-like problem-environment example" id="problem4"><a id="x1-3004r4"></a>Compute the indefinite integral below using tabular integration: <script type="math/tex; mode=display"> \int \cos 3x \cos 5x ~dx </script>
+     <ul class="itemize1">
+     <li class="itemize">Let us take <script type="math/tex">u = \cos 3x</script> and <script type="math/tex">dv = \cos 5x</script> (it would have been fine to choose them the other way around
+     as well). The table is then
+     <div class="center">
+<!--l. 92--><p class="noindent">
+</p>
+<div class="tabular"> <table id="TBL-3" class="tabular" cellspacing="0" cellpadding="0"><colgroup id="TBL-3-1g"><col id="TBL-3-1"/><col id="TBL-3-2"/><col id="TBL-3-3"/></colgroup><tbody><tr style="vertical-align:baseline;" id="TBL-3-1-"><td style="white-space:nowrap; text-align:center;" id="TBL-3-1-1" class="td11">  </td><td style="white-space:nowrap; text-align:center;" id="TBL-3-1-2" class="td11"> <script type="math/tex">u</script> </td><td style="white-space:nowrap; text-align:center;" id="TBL-3-1-3" class="td11"> <script type="math/tex">dv</script> </td></tr><tr class="hline"><td><hr/></td><td><hr/></td><td><hr/></td></tr><tr style="vertical-align:baseline;" id="TBL-3-2-"><td style="white-space:nowrap; text-align:center;" id="TBL-3-2-1" class="td11"> </td><td style="white-space:nowrap; text-align:center;" id="TBL-3-2-2" class="td11">  <script type="math/tex">\answer {\cos 3x}</script> </td><td style="white-space:nowrap; text-align:center;" id="TBL-3-2-3" class="td11">  <script type="math/tex">\answer {\cos 5x}</script></td>
+</tr><tr style="vertical-align:baseline;" id="TBL-3-3-"><td style="white-space:nowrap; text-align:center;" id="TBL-3-3-1" class="td11">   </td><td style="white-space:nowrap; text-align:center;" id="TBL-3-3-2" class="td11"> <script type="math/tex">\answer {-3 \sin 3 x}</script> </td><td style="white-space:nowrap; text-align:center;" id="TBL-3-3-3" class="td11"> <script type="math/tex">\answer {(\sin 5x)/5}</script> </td>
+</tr><tr style="vertical-align:baseline;" id="TBL-3-4-"><td style="white-space:nowrap; text-align:center;" id="TBL-3-4-1" class="td11">   </td><td style="white-space:nowrap; text-align:center;" id="TBL-3-4-2" class="td11"> <script type="math/tex">\answer {-9 \cos 3x}</script> </td><td style="white-space:nowrap; text-align:center;" id="TBL-3-4-3" class="td11"> <script type="math/tex">\answer {-(\cos 5x)/25}</script> </td>
+</tr></tbody></table></div></div>
+     <!--l. 101--><p class="noindent">Which gives <script type="math/tex; mode=display"> \begin {aligned} \int & \cos 3x \cos 5x ~dx = \\ & \answer { \frac {1}{5} \cos 3x \sin 5x} - \answer {\frac {3}{25} \sin 3x \cos 5x} + \int \answer {\frac {9}{25} \cos 3x \cos 5x} ~dx. \end {aligned} </script>
+     </p></li>
+     <li class="itemize">This example has a twist: the integral on the right-hand side is just a constant
+     times the integral on the left-hand side. This indicates that further integrations
+     by parts would be unfruitful because you’d end up in something like a cycle.
+     What you <em>can</em> do is <em>solve</em> for the answer by moving both integrals to the left
+     side of the equation and then combining like terms: <script type="math/tex; mode=display"> \answer {\frac {16}{25}} \int \cos 3x \cos 5x ~dx = \answer { \frac {1}{5} \cos 3x \sin 5x} - \answer {\frac {3}{25} \sin 3x \cos 5x} </script> and therefore
+     <script type="math/tex; mode=display"> \int \cos 3x \cos 5x ~ dx = \answer { \frac {5}{16} \cos 3x \sin 5x - \frac {3}{16} \sin 3x \cos 5x} + C. </script></li></ul>
+<!--l. 108--></div>
+ 
+ 
+
+                                                                  
+
+                                                                  
+                                                                  
+
+
+</body></html>
